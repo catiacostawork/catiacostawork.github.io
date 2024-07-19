@@ -1,0 +1,319 @@
+body{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+/*Estilo CSS do Menu*/
+#menu-principal li{
+display:inline
+}
+
+#menu-principal a{
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-decoration-style: none;
+    margin-left: 32px;
+}
+
+#menu-principal {
+    position: absolute;
+    top: 16px;
+    right: 32px;
+}
+
+#menu-principal a:hover{
+    color: blue;
+}
+
+#menu-principal a.ativo{
+    color: blue;
+    font-weight: bold;
+}
+
+#menu-principal a:link {
+    text-decoration: none;
+}
+
+/*Estilo CSS da Imagem Background Principal*/
+#foto-principal {
+    height: 200px;
+    background: url(/imagens/foto_principal.jpg) no-repeat center top;
+    /*Como o meu computador é um mac o URL da imagem principal está completo.*/
+}
+
+    /*Fotografia principal nas páginas secundárias
+    Redução de tamanho em altura*/
+#foto-principal-pag-secun {
+    height: 100px;
+    background: url(/imagens/foto_principal.jpg) no-repeat center top;
+    /*Como o meu computador é um mac o URL da imagem principal está completo.*/
+}
+
+#cabecalho {
+    max-width: 60em;
+    min-width: 37.5em;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+/*Estilo CSS dos Conteúdos das página*/
+#conteudo-principal{
+    float: left;
+    width: 64.5833333%;
+}
+
+#conteudo-secundario{
+    float: right;
+    width: 29.160000%;
+    background-color: #0f599f;
+    padding: 10px;
+    margin-top: 50px;
+    color: white;
+}
+
+#conteudo-secundario-pag-empresa{
+    float: right;
+    width: 32.16%;
+    padding: 0px 12px;
+}
+
+#conteudo-secundario-pag-servicos{
+    float: right;
+    width: 27%;
+    padding: 0px 12px;
+}
+
+#conteudo{
+    max-width: 60em;
+    min-width: 37.5em;
+    margin: 0 auto;
+}
+
+/*Estilo CSS dos Textos H1, H2, P, Hiperligações*/
+#conteudo h1{
+    font-weight: 400;
+}
+
+#conteudo-principal h1{
+    font-size: 1.85em;
+    font-weight: 400;
+}
+
+#conteudo-principal h2{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#conteudo-principal a{
+    font-size: 18px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+#conteudo-secundario h1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#conteudo-secundario p{
+    font-size: 0.875em;
+}
+
+#conteudo-secundario a{
+    font-size: 18px;
+    color: white;
+}
+
+#conteudo-secundario-pag-servicos h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/*Estilo CSS do Rodapé*/
+#rodape {
+    clear: both;
+}
+
+#contato{
+    float: left;
+    font-size: 16px;
+    color: black;
+    margin: 12px 12px;
+}
+
+#endereco{
+    float: right;
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    margin: 12px 12px;
+}
+
+#copyright{
+    clear: both;
+    font-size: 11px;
+    color: black;
+    display: block;
+    margin: 12px 0px;
+    padding: 1em;
+}
+
+footer{
+    max-width: 60em;
+    min-width: 37.5em;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+/*Página empresa
+Legenda da Imagem secundária*/
+.legenda {
+    margin: 0;
+    color: #FFF;
+    background: #808080;
+    font-style: italic;
+    text-align: center;
+    padding: 0.3em 0.6em;
+    width: 114%;
+}
+
+/*Página de Serviços
+Depoimentos*/
+.depoimento {
+    margin-bottom: 1em;
+}
+    
+.depoimento blockquote {
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+    
+.depoimento blockquote p {
+    margin-bottom: 0.7em;
+}
+
+.autor p{
+    text-align: right;
+}
+
+/*Página de Serviços
+Tabela de Preços*/
+.tabela{
+    position: relative;
+    top: 200px;
+}
+.tabela-servicos {
+    border-spacing: 0;
+    width: 100%;
+}
+   
+.tabela-servicos caption {
+   font-size: 24px;
+   margin-bottom: 0.5em;
+   text-align: left;
+}
+   
+.tabela-servicos th {
+   background: #0F599F;
+   color: #FFF;
+   font-weight: normal;
+   text-align: center;
+}
+   
+.tabela-servicos th, .tabela-servicos td {
+   border-bottom: 1px solid #CCC;
+   font-size: 14px;
+   padding: 0.3em;
+}
+   
+.tabela-servicos .prazo-entrega {
+   text-align: center;
+}
+   
+.tabela-servicos .valor-servico {
+   text-align: right;
+}
+
+/*Página Contactos
+Form de contacto*/
+.grupo {
+    border-style: none;
+}
+
+.campo {
+    margin-bottom: 0.75em;
+    display: inline-block;
+}
+
+.campo label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.1em;
+}
+    
+.campo abbr {
+    color: #C00;
+    font-weight: bold;
+}
+    
+.campo input, .campo textarea, .campo select {
+    width: 100%;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    padding: 0.1em 0;
+}
+
+.empresa{
+    margin-left: 15px;
+}
+
+.campo-departamento{
+    clear: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.departamentos{
+    font-size: 13px;
+}
+
+.assunto{
+    width: 522px;
+}
+    
+.campo textarea {
+    height: 10em;
+    width: 522px;
+}
+    
+label.checkbox {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+button {
+    background-color: #0F599F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
